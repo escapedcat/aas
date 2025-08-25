@@ -10322,6 +10322,7 @@ footer.giftshop {
   --color-highlight: #e6007e;
   --color-default-bg: #eef9e7;
   --label-font-size-xl: 30px;
+  --box-shadow-default: 4px 4px 10px 3px rgba(0, 0, 0, 0.1);
 }
 
 label,
@@ -10362,7 +10363,7 @@ input[type="radio"]:checked + label {
   + label,
 .checkboxbutton-wrapper label {
   border-radius: 0;
-  box-shadow: 4px 4px 10px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--box-shadow-default);
 }
 
 .input-wrapper.info input,
@@ -10383,7 +10384,7 @@ input[type="radio"]:checked + label {
 [type="color"],
 textarea {
   border-radius: 0;
-  box-shadow: 4px 4px 10px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--box-shadow-default);
 }
 
 .rythm_target-wrapper
@@ -10409,10 +10410,31 @@ textarea {
   font-size: var(--label-font-size-xl);
 }
 
+.amount-wrapper .slider-wrapper,
+.amount-wrapper:not(.no-slider) .input-wrapper input {
+  border-radius: 0;
+  box-shadow: var(--box-shadow-default);
+}
+
+.amount-wrapper input[type="number"],
+.amount-wrapper .input-wrapper .currency-symbol {
+  border: none;
+}
+
+.amount-wrapper .input-wrapper .currency-symbol {
+  background-color: rgba(132, 132, 132, 0.76);
+  font-weight: bold;
+  color: #fff;
+}
+
+.method-wrapper {
+  box-shadow: var(--box-shadow-default);
+}
+
 .gift-donation.row {
   margin-left: 10px;
   margin-right: 10px;
-  box-shadow: 4px 4px 10px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--box-shadow-default);
 }
 
 .gift-donation .column,
