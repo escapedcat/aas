@@ -381,10 +381,34 @@ body {
   border: none;
 }
 
+h1 {
+  color: var(--green);
+  font-weight: bold;
+  border-top: 15px solid var(--green);
+  padding-top: 1.5rem;
+}
+
+.for {
+  color: #000;
+}
+
+.sender {
+  color: #000;
+}
+
 .receiver span {
   display: block;
   color: #000;
   background: none;
   border-bottom: 15px solid var(--green);
   border-radius: 0;
+  font-style: normal;
+  max-width: auto;
+}
+
+.amount span {
+  display: block;
+  color: #000;
+  background: none;
+  font-style: normal;
 }
