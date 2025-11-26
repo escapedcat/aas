@@ -1,10 +1,21 @@
-/*  indivudal changes */
-
 :root {
   --color-highlight: #e6007e;
-  --color-default-bg: #eef9e7;
+  --color-default-bg: #ddedd3;
   --label-font-size-xl: 30px;
   --box-shadow-default: 4px 4px 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+.payment-component-wrapper h2 {
+  text-align: left;
+}
+
+.payment-component-wrapper .payment-input-wrapper h2 {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.payment-component-wrapper .method-wrapper input[type="radio"] + label {
+  border-radius: 0;
 }
 
 label,
@@ -93,7 +104,14 @@ textarea {
 }
 
 .amount-wrapper .slider-wrapper,
-.amount-wrapper:not(.no-slider) .input-wrapper input {
+.amount-wrapper:not(.no-slider) .input-wrapper input,
+.amount-wrapper .button-wrapper button,
+.amount-wrapper .button-wrapper .radio,
+.rythm_target-wrapper
+  .donation-target-wrapper
+  .columns:last-child:first-child
+  input[type="radio"]
+  + label {
   border-radius: 0;
   box-shadow: var(--box-shadow-default);
 }
